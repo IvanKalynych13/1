@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переменние</title>
+    <link rel="stylesheet" href="../Проект1/css/style.css">
+</head>
+<body>
+    <div class="text">
+        <h1>Переменние</h1>
+        <p class="p-text">Переменние використовуються для збереження інформації</p>
+        <p class="p-text">Переменние створюються за доп var(старий метод), або let(новий спосіб)</p>
+        <p class="p-text">Переменні можуть бути як let,var або cons,const-це переменна яку не можна в подальшому змінювати</p>
+        <p class="p-text">В переменній може зберігатись, як речення, так і число або булеан </p>
+        <p class="p-text">let num = 9; <br> let string = 'Hello world'</p>
+        <p class="p-text">Імена переменних: можуть бути цифри і букви, но не можна використовувати цифри в початку назви</p>
+        <p class="p-text">Також не можна використовувати зарезервовані імена такі як: var, let,return,export</p>
+    
+    
+        <h2>Взаємодія з користувачем</h2>
+        <p class="t-text">alert("Hello world")-виводить модальне повідомлення на екран, зупиняючи скріпт.</p>
+        <p class="t-text">prompt("Скільки тобі років" )- виводить вікно в якому користувач може написати текст</p>
+        <p class="t-text">confirm("Text")- виводить вікно, яке повертає значення true або  false </p>
+    
+    
+        <h2>Условия</h2>
+        <p class="d-text">if(Тут условия) { <br> <span style="color: #000;">resa</span>   тут те що буде виводитись, коли условия відбудеться <br> }</p>
+        <p class="d-text">if(Тут условия) { <br>   тут те що буде виводитись, коли условия відбудеться <br> } else{ <br> тут якщо условия неправильно <br>}</p>
+        <p class="d-text">Також можна використовувати if(Тут условия){ <br> тут те що буде виводитись, коли условия відбудеться <br>} else if{ <br> тут нова умова, якщо та неправильна <br> }  </p>
+    
+    
+        <h2>Цикли</h2>
+        <p class="c-text">Цикли для того, щоб багато разово повторювати код</p>
+    
+        <h3>while</h3>
+        <p class="c-text">Запис <br> while(Условия){ <br> Ту те, що буде відбуватись <br> } </p>
+        <p class="c-text">Наприклад <br> i = 0 <br> while(i < 3 ){ <br> alert(і > 3) <br> i++</p>
+        
+        <h3>for</h3>
+        <p class="f-text">for</p>
+        <p class="f-text">for(початок; умова; дія){ <br> те що буде виконуватись <br> }</p>
+        <p class="f-text">i=0 <br> for(i=0, або var o = 0; i < 3; i++){ <br> alert(Ку) <br> }</p>
+        <p class="f-text">break - закінчує цикл</p>
+        <p class="f-text">continue- прериває,пропускає</p>
+        
+
+        <h2>Масив</h2>
+            <p>Масив це різновидність обєкта, який предназначен для зберігання пронумерованих значень.Зазвичай використовується для зберігання упорядочних колекцій данних(список товарів, товарів для покупки); В ньому може зберігатись як число і строки, так і обєкти, і булеві значення </p>
+            <p>Спосіб створення масива: <br> let masuv = ['Хліб','Чай', 'Цукор'];</p>
+            <p>Щоб получити елемент з масива використовують alert(masuv[1])</p>
+            <p>Щоб замінити елемент масива: masuv[1]= 'Кава'; длбавляється елемент так само, тільки в душках записується номер, який буде   створений</p>
+            <p>alert(masuv.length)-виводить число елементів <br> alert(masuv)-виводить цілий масив</p>
+            <p>masuv.pop();-удаляє елемент з кінця масива</p>
+            <p>masuv.push('Цукор')- добавляє в кінець масива елемент</p>
+            <p>masuv.shift -удаляє елемент з початку масива</p>
+            <p>masuv.unshift добавляє елемент з початку масива</p>
+    <h3>Методи масивів</h3>
+        <h4>split()</h4>
+            <p>let names = "Катя, Коля, Ваня, Міша" <br> names.split(", ") - split - перетворює рядок в масив, в душках це тек як він буде розділяти його </p>
+        <h4>join()</h4>
+            <p>let names = ["Катя", 'Коля', 'Ваня', "Міша"] <br> names.join(',')- join - перетворює масив в рядок</p>
+        <h4>delete</h4>
+            <p>let names = ["Катя", 'Коля', 'Ваня', "Міша"] <br> delete names[1] - delete - удаляє елемент в масиві, но місце елемента залишається  </p>
+        <h4>splice()</h4>
+            <p>Удаляє, добавляє, заміняє елементи масива</p>
+            <p>names.splice(1, 1) -це означає, що начинаючи з позиції(від 0 до %) один удалити перший елемент</p>
+            <p> names.splice(2, 0, 'Я', 'Иду')- це означає, що починаючи, з другої позиції, не удаляючи нічого, но добавити дві строки </p>
+        <h4>reverse()</h4>
+            <p>names.reverse();- обертає масив задом на перед, якщо він складається із цифр</p>
+        <h4>concat</h4>
+            <p>let newNames = names.concat('Назва ',' Какашки')- обєднює масиви</p>
+        <h2>Функції</h2>
+            <p>Функціх створені для зменшення обєму коду коду, щоб його не повторяти</p>
+            <p>function newFunction(){ - тут ініціалізація і назва функці <br> let message = 'Привет' -це локальна переменна, яка знаходиться у функціх, яку не можна використовувати поза межами функції <br> alert('Text'); -тут дія функції  <br> } <br> newFunction(); - визов функції </p>
+            <h3>Назви функції</h3>
+                <p>Назва функції з початком show... означає, що функція щось показує</p>
+                <p>Назва функції з початком get.. получають</p>
+                <p>Назва функції з початком calc.. вичисляють</p>
+                <p>Назва функції з початком create.. створюють</p>
+                <p>Назва функції з початком check.. провіряють </p>
+        <h2>Обєкти</h2>
+        <p> Створюються за допомогою {}</p>
+        <p>let object = { <br> name : "John", name - це елемент, "John"- це значення <br> agge : 10 <br> }</p>
+        <p>Щоб звернутись до елемент можна використовувати точку, якщо назва елемента без пробілів alert(object.name;) </p>
+        <p>Можна ще створювати переменну яка буде мати в інформації назву елемента обєкта і виводити елемент через переменну <br> наприклад: let object = {<br>
+            name : 'Vanya',<br>
+            agge : 3,<br>
+            friend: 4,<br>
+            theDrink: 'wather'<br>
+            };<br>
+            let ada = "agge" <br>
+            alert(object[ada])
+        </p>
+        <p>Щоб занмінити значення елемента використовують: object.name = "Тут нове значення"</p>
+        <p>Щоб добавити новий елемент: object['тут назва нового елемента'] = 'тут значення того елемента'</p>
+        <p>Можна ше таке чудо творити <br>    let tut = {<br>
+            <span> ss</span> car : {<br>
+                <span>sss</span>  inside : {<br>
+                    <span>sssss</span>   rule: 'maps'<br>
+                <span>sss</span> },<br>
+                <span>sss</span> outside : {<br>
+                    <span>sssss</span>  trunk : 'Jack'<br> 
+                <span>sss</span> },<br>
+            <span> ss</span> },<br>
+        };<br>
+        
+        alert(tut.car.inside['rule']);</p>
+        <h3>Властивості обєкта(for ... in )</h3>
+        <p>let chevo = {<br>
+            name : 'Vasya',<br>
+            agge : 20, <br>
+            friends : 5<br>
+        };<br>
+        <br>
+        for(let svoystvo in chevo){ <br>
+            alert('Значення ' + svoystvo + " значення " + chevo[svoystvo]); <br></p>
+        <p>let element = 0; <br>
+        <br>
+            for(let num in chevo){ <br>
+                element++; <br>
+            };<br>
+            alert('Всього елементів ' + element);</p>
+        
+        
+        <h2>Собития</h2>
+        <h3>Собития- це деякі процеси які відбуваються на веб сторінці</h3>
+        <p>Є дві категорії собитий: user, brauser</p>
+        <p>Bravser: загрузка елемента, загрузка елемента DOM, і інших   </p>
+        <p>user: scrol, click, adaptive, tipe txt and more</p>
+        <h3> Основні собития елемента</h3>
+        <p>onclick - left click</p>
+        <p>ondbclick - double left click</p>
+        <p>onchange - змінення значення в полі елемента форми</p>
+        <p>onfocus - focus on forms</p>
+        <p>onblur - unfocus on forms</p>
+        <p>load - loading webb</p>
+        onclick = "тут те що має відбуватись при кліці"
+
+        
+        
+        <h2>Робота з DOM деревом</h2>    
+        <h2>Дія з  html елементом через js</h2>
+        
+        <h3 class="h3">
+            document- означає, що робота буде відбуватись на цій сторінці. <br>
+            .getElementById - означає, що взаємодія з елементом буде відбувати через id,querySelector - то саме тільки новіше <br>
+            .document.getElementByTagName("h2") - взаємодія з тегами <br>
+            .document.getElementByClassName - взаємодія з класами
+            .inerHTML - означає замінити контент в елементі
+        </h3>
+        <p id="p">Також монжна зберегти в переменну</p>
+        <p>let a = document.querySelector('.ood');
+            a.inerHTML = 1010
+            <h4>Зміна властивостей dom wood</h4>
+            <p>document.getElementByid('тут id елемента').inerHTML="Hellow world"   </p>
+            <p>
+            document.querySelector('#тут id елемента').inerHTML="Hellow world" <br> 
+            document.querySelector(".тут клас елемента, або назва тега, як h2, p...").inerHTML ="Hellow world"
+            </p>
+        </p>
+        <p class="car">lop</p>
+    </div>
+    <H2>Англійська</H2>
+    <h5>3 форми неправильних дієслів</h5>
+    <h5>Past simple - минуле просте <br> Past Continue <br> Preset Perfect </h5>
+    <h5></h5>
+
+
+
+
+
+
+
+
+
+
+
+    <div onclick="alert('Ти нашо на дів цикнів')"><h6>click</h6></div>
+    
+    <script src="../Проект1/js/di.js"></script>
+</body>
+</html>

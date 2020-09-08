@@ -1,0 +1,27 @@
+body {
+  background-color: #000;
+  color: #b700cf;
+  padding: 20px;
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: red;
+  font-size: 18px;
+}
+
+h4 {
+  color: #3cff00;
+  font-size: 16px;
+}
+
+p {
+  color: #00d9ff;
+}
+
+span {
+  color: #000;
+}
